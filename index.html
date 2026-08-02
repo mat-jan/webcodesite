@@ -5,12 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WebCodeSite.studio | Profesjonalne Strony WWW</title>
     <link rel="icon" type="image/png" href="favicon.png">
-    
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
-    
     <style>
-        /* Blokada zaznaczania tekstu */
         body { 
             font-family: 'Plus Jakarta Sans', sans-serif; 
             background-color: #050505; 
@@ -21,22 +18,43 @@
             -ms-user-select: none;
             user-select: none;
         }
-
-        /* Pozwolenie na pisanie w formularzu */
         input, textarea { user-select: text !important; }
 
-        .glass { background: rgba(255, 255, 255, 0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255, 255, 255, 0.1); }
+        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); }
         .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
         .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
         .btn-wa { background: #25D366; color: white; }
         .btn-blue { background: #3b82f6; color: white; }
-        
+
         #chat-window { display: none; opacity: 0; transition: all 0.3s ease; z-index: 1000; }
         #chat-window.active { display: block; opacity: 1; transform: translateY(-10px); }
+
+        /* Realizacje hover */
+        .project-card { transition: transform 0.25s ease, border-color 0.25s ease; }
+        .project-card:hover { transform: translateY(-4px); border-color: rgba(59,130,246,0.4) !important; }
+
+        /* Counter animacja */
+        @keyframes fadeUp {
+            from { opacity: 0; transform: translateY(24px); }
+            to   { opacity: 1; transform: translateY(0); }
+        }
+        .fade-up { animation: fadeUp 0.6s ease both; }
+
+        /* Linia dekoracyjna */
+        .section-label {
+            font-size: 10px;
+            font-weight: 800;
+            letter-spacing: 0.3em;
+            text-transform: uppercase;
+            color: #3b82f6;
+            display: block;
+            margin-bottom: 12px;
+        }
     </style>
 </head>
 <body class="antialiased">
 
+    <!-- NAV -->
     <nav class="fixed top-0 w-full z-50 p-4 md:p-6">
         <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-2xl px-4 md:px-6 py-3">
             <div class="text-lg md:text-xl font-extrabold tracking-tighter italic">WebCodeSite<span class="text-blue-500">.studio</span></div>
@@ -47,27 +65,141 @@
         </div>
     </nav>
 
+    <!-- HERO -->
     <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
         <div class="absolute inset-0 -z-10 overflow-hidden text-blue-500/10">
             <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-current blur-[120px] rounded-full"></div>
         </div>
-
         <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tight leading-none uppercase italic">
             Twój biznes<br><span class="accent-gradient">w sieci</span>
         </h1>
         <p class="max-w-xl text-gray-400 text-lg md:text-xl mb-12 font-light">
             Projektujemy nowoczesne strony WWW, które przyciągają klientów. Profesjonalnie, szybko i z gwarancją jakości.
         </p>
-
         <div class="flex flex-col sm:flex-row gap-5 w-full max-w-lg">
             <button onclick="toggleChat()" class="btn-blue flex-1 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition">Zacznij projekt</button>
             <a href="https://www.instagram.com/webcodesite.studio/" target="_blank" class="btn-ig flex-1 py-4 rounded-2xl font-bold text-lg flex items-center justify-center hover:scale-105 transition text-white">Portfolio IG</a>
         </div>
     </section>
 
+    <!-- O MNIE -->
+    <section class="max-w-6xl mx-auto px-6 py-20 mb-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+            <!-- Tekst -->
+            <div>
+                <span class="section-label">Kim jestem</span>
+                <h2 class="text-4xl font-extrabold mb-6 italic leading-tight">
+                    Mateusz,<br><span class="accent-gradient">twórca stron WWW</span>
+                </h2>
+                <p class="text-gray-400 leading-relaxed text-lg font-light mb-6">
+                    Mam 17 lat i każdy projekt traktuję poważnie – niezależnie od jego wielkości. Tworzę strony od podstaw: od struktury i designu, przez formularze kontaktowe, galerie i mapy, aż po podstawowe SEO. Szybko się uczę i sprawnie wdrażam niestandardowe rozwiązania.
+                </p>
+                <p class="text-gray-500 leading-relaxed font-light mb-8">
+                    Dostarczam też pełny kod źródłowy i repozytorium na GitHubie – Twój projekt zostaje Twój.
+                </p>
+
+                <!-- Stack / cechy -->
+                <div class="flex flex-wrap gap-3">
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">WordPress</span>
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">HTML / CSS / JS</span>
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">SEO</span>
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">GitHub</span>
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">Formularze</span>
+                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">Mapy</span>
+                </div>
+            </div>
+
+            <!-- Statystyki / karty -->
+            <div class="grid grid-cols-2 gap-4">
+                <div class="glass rounded-3xl p-8 text-center border-blue-500/10">
+                    <div class="text-5xl font-black accent-gradient mb-2">2</div>
+                    <div class="text-gray-400 text-sm font-light uppercase tracking-wider">Zrealizowane<br>projekty</div>
+                </div>
+                <div class="glass rounded-3xl p-8 text-center border-blue-500/10">
+                    <div class="text-5xl font-black accent-gradient mb-2">5–10</div>
+                    <div class="text-gray-400 text-sm font-light uppercase tracking-wider">Podstron<br>w projekcie</div>
+                </div>
+                <div class="glass rounded-3xl p-8 text-center border-blue-500/10 col-span-2">
+                    <div class="text-gray-400 text-sm font-light uppercase tracking-widest mb-3">Kod na GitHubie</div>
+                    <div class="flex justify-center gap-4">
+                        <a href="https://github.com/mat-jan" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-bold uppercase tracking-wider transition">github.com/mat-jan</a>
+                        <span class="text-gray-700">·</span>
+                        <a href="https://github.com/webcodesite-studio" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-bold uppercase tracking-wider transition">webcodesite-studio</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- REALIZACJE -->
+    <section class="max-w-6xl mx-auto px-6 py-12 mb-20">
+        <span class="section-label">Portfolio</span>
+        <h2 class="text-4xl font-extrabold italic mb-12">Zrealizowane projekty</h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+
+            <!-- Ozo Dance Studio -->
+            <a href="https://ozodancestudio.pl/" target="_blank" class="project-card glass rounded-[2rem] p-8 border border-white/5 block group">
+                <div class="flex items-start justify-between mb-6">
+                    <div>
+                        <span class="text-[10px] font-black uppercase tracking-[0.25em] text-blue-400">Studio tańca</span>
+                        <h3 class="text-2xl font-extrabold italic mt-1">Ozo Dance Studio</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/20 transition text-lg">→</div>
+                </div>
+                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
+                    Rozbudowana strona dla sieci studiów tańca działającej w 7 miastach. Pełna nawigacja z podstronami dla każdej lokalizacji, grafik zajęć, cennik, profile instruktorów i formularz kontaktowy.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">WordPress</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">7 lokalizacji</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">SEO</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Galeria</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Social Media</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-white/5">
+                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">ozodancestudio.pl ↗</span>
+                </div>
+            </a>
+
+            <!-- ASKOM -->
+            <a href="https://askom.waw.pl/" target="_blank" class="project-card glass rounded-[2rem] p-8 border border-white/5 block group">
+                <div class="flex items-start justify-between mb-6">
+                    <div>
+                        <span class="text-[10px] font-black uppercase tracking-[0.25em] text-teal-400">Firma IT / Usługi</span>
+                        <h3 class="text-2xl font-extrabold italic mt-1">ASKOM</h3>
+                    </div>
+                    <div class="w-10 h-10 rounded-full bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:bg-teal-500/20 transition text-lg">→</div>
+                </div>
+                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
+                    Profesjonalna strona dla firmy świadczącej usługi IT w Warszawie i okolicach. Prezentacja oferty (certyfikowany serwis InsERT, cyberbezpieczeństwo, Microsoft 365), sekcja kontaktowa i przejrzysta struktura nastawiona na konwersję.
+                </p>
+                <div class="flex flex-wrap gap-2">
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">HTML/CSS/JS</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">SEO</span>
+                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Responsywność</span>
+                </div>
+                <div class="mt-6 pt-6 border-t border-white/5">
+                    <span class="text-teal-400 text-xs font-bold uppercase tracking-widest">askom.waw.pl ↗</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CTA pod realizacjami -->
+        <div class="mt-8 text-center">
+            <p class="text-gray-600 text-sm font-light">Twój projekt mógłby być tutaj.</p>
+            <button onclick="toggleChat()" class="mt-4 btn-blue px-8 py-3 rounded-2xl font-bold text-sm hover:scale-105 transition inline-block">Porozmawiajmy →</button>
+        </div>
+    </section>
+
+    <!-- OFERTA -->
     <section id="oferta" class="max-w-6xl mx-auto px-6 py-20 bg-white/[0.02] rounded-[3rem] mb-20 border border-white/5">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             <div>
+                <span class="section-label">Co dostarczam</span>
                 <h2 class="text-4xl font-bold mb-6 italic">Baza Strony WWW</h2>
                 <p class="text-gray-400 mb-8 leading-relaxed text-lg font-light">Tworzymy fundamenty Twojej obecności w sieci. Każdy projekt jest optymalizowany pod kątem szybkości i urządzeń mobilnych.</p>
                 <div class="space-y-4">
@@ -82,6 +214,10 @@
                     <div class="flex items-center gap-3">
                         <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
                         <span class="text-gray-300 font-medium">Integracja z social media</span>
+                    </div>
+                    <div class="flex items-center gap-3">
+                        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
+                        <span class="text-gray-300 font-medium">Kod źródłowy + repozytorium GitHub</span>
                     </div>
                 </div>
             </div>
@@ -100,6 +236,7 @@
         <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em] font-black italic">&copy; 2025 WebCodeSite.studio</p>
     </footer>
 
+    <!-- CHAT -->
     <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
         <div id="chat-window" class="glass w-[320px] md:w-[380px] rounded-[2rem] overflow-hidden mb-4 shadow-2xl border border-white/10 bg-[#080808]">
             <div class="bg-blue-600 p-6 flex items-center gap-4">
@@ -121,28 +258,23 @@
                 <p class="text-[10px] text-gray-500 mt-4 tracking-widest uppercase font-black">Zaraz się odezwiemy.</p>
             </div>
         </div>
-
         <button onclick="toggleChat()" class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all border-4 border-white/5">
             <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
         </button>
     </div>
 
     <script>
-        // Blokada menu pod prawym przyciskiem
         document.addEventListener('contextmenu', event => event.preventDefault());
-
-        // Blokada F12 i skrótów inspekcji
         document.onkeydown = function(e) {
-            if (e.keyCode == 123) { return false; }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { return false; }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { return false; }
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { return false; }
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { return false; }
+            if (e.keyCode == 123) return false;
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
+            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
+            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
         };
 
-        // Funkcje Czatu
         function toggleChat() { document.getElementById('chat-window').classList.toggle('active'); }
-        
+
         const form = document.getElementById('chat-form');
         form.onsubmit = async (e) => {
             e.preventDefault();
