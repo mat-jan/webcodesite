@@ -3,299 +3,665 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebCodeSite.studio | Profesjonalne Strony WWW</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <title>Tworzenie stron internetowych dla firm | WebCodeSite</title>
+    <meta name="description" content="Projektowanie i tworzenie stron internetowych dla firm. WordPress lub HTML/CSS/JS, wersja mobilna, podstawowe SEO i pełny kod źródłowy na własność. Bezpłatna wycena.">
+    <link rel="canonical" href="https://webcodesitestudio.matjan.dev/">
+    <meta name="robots" content="index, follow, max-image-preview:large">
+    <meta name="author" content="WebCodeSite.studio">
+    <meta property="og:locale" content="pl_PL">
+    <meta property="og:site_name" content="WebCodeSite.studio">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://webcodesitestudio.matjan.dev/">
+    <meta property="og:title" content="Tworzenie stron internetowych dla firm | WebCodeSite">
+    <meta property="og:description" content="Strony internetowe dla firm, zaprojektowane i zakodowane od podstaw. Pełny kod źródłowy na własność.">
+    <meta property="og:image" content="https://webcodesitestudio.matjan.dev/favicon.png">
+    <meta property="og:image:secure_url" content="https://webcodesitestudio.matjan.dev/favicon.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1024">
+    <meta property="og:image:height" content="1024">
+    <meta property="og:image:alt" content="Logo WebCodeSite.studio">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:image" content="https://webcodesitestudio.matjan.dev/favicon.png">
+    <link rel="apple-touch-icon" href="/favicon.png">
+    <meta name="theme-color" content="#f3f1ec">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@graph": [
+            {
+                "@type": "ProfessionalService",
+                "@id": "https://webcodesitestudio.matjan.dev/#business",
+                "name": "WebCodeSite.studio",
+                "url": "https://webcodesitestudio.matjan.dev/",
+                "description": "Projektowanie i tworzenie stron internetowych dla firm: WordPress, HTML/CSS/JS, wersja mobilna, podstawowe SEO.",
+                "telephone": "+48513773353",
+                "logo": "https://webcodesitestudio.matjan.dev/favicon.png",
+                "image": "https://webcodesitestudio.matjan.dev/favicon.png",
+                "areaServed": { "@type": "Country", "name": "Polska" },
+                "availableLanguage": "pl",
+                "knowsAbout": ["Tworzenie stron internetowych", "WordPress", "HTML", "CSS", "JavaScript", "SEO"],
+                "founder": { "@type": "Person", "name": "Mateusz" },
+                "sameAs": [
+                    "https://www.instagram.com/webcodesite.studio/",
+                    "https://github.com/webcodesite-studio",
+                    "https://github.com/mat-jan"
+                ],
+                "hasOfferCatalog": {
+                    "@type": "OfferCatalog",
+                    "name": "Usługi",
+                    "itemListElement": [
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Projekt i wykonanie strony internetowej" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Strona na WordPressie" } },
+                        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Optymalizacja SEO strony" } }
+                    ]
+                }
+            },
+            {
+                "@type": "WebSite",
+                "@id": "https://webcodesitestudio.matjan.dev/#website",
+                "url": "https://webcodesitestudio.matjan.dev/",
+                "name": "WebCodeSite.studio",
+                "inLanguage": "pl-PL",
+                "publisher": { "@id": "https://webcodesitestudio.matjan.dev/#business" }
+            }
+        ]
+    }
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Ile kosztuje strona internetowa?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Cena zależy od liczby podstron, funkcji (formularze, galerie, mapy, grafik zajęć) i technologii. Opisz krótko swój projekt w formularzu albo zadzwoń, a przygotuję bezpłatną wycenę."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "WordPress czy strona w HTML — co wybrać?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "WordPress sprawdzi się, jeśli chcesz samodzielnie dodawać treści, np. aktualności czy grafik. Strona w czystym HTML, CSS i JavaScript jest lżejsza i szybsza, dobra dla wizytówek firmowych, które rzadko się zmieniają. Doradzę, co lepiej pasuje do Twojej firmy."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy strona będzie dobrze działać na telefonie?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Każdą stronę projektuję jako responsywną, czyli dopasowaną do telefonów, tabletów i komputerów."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy strona będzie widoczna w Google?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "W ramach projektu wykonuję podstawowe SEO: poprawną strukturę nagłówków, tytuły i opisy podstron, dane strukturalne oraz szybkie ładowanie. To fundament, dzięki któremu Google prawidłowo rozumie i indeksuje stronę."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Czy dostanę kod źródłowy strony?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Tak. Po zakończeniu prac przekazuję pełny kod źródłowy i repozytorium na GitHubie. Strona należy do Ciebie i nie jesteś uzależniony od wykonawcy."
+            }
+        }
+    ]
+}
+    </script>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=IBM+Plex+Sans:wght@400;500&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
     <style>
-        body { 
-            font-family: 'Plus Jakarta Sans', sans-serif; 
-            background-color: #050505; 
-            color: white; 
-            scroll-behavior: smooth;
-            -webkit-user-select: none;
-            -moz-user-select: none;
-            -ms-user-select: none;
-            user-select: none;
+        :root {
+            --paper: #f3f1ec;
+            --paper-2: #ebe8e1;
+            --ink: #161616;
+            --ink-2: #4a4945;
+            --ink-3: #85837c;
+            --line: #d6d2c8;
+            --accent: #1f4d3a;
+            --serif: 'Newsreader', Georgia, 'Times New Roman', serif;
+            --sans: 'IBM Plex Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+            --mono: 'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, monospace;
+            --wrap: 1160px;
+            --gutter: clamp(20px, 4vw, 40px);
         }
-        input, textarea { user-select: text !important; }
 
-        .glass { background: rgba(255,255,255,0.03); backdrop-filter: blur(15px); border: 1px solid rgba(255,255,255,0.1); }
-        .accent-gradient { background: linear-gradient(135deg, #3b82f6 0%, #2dd4bf 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-        .btn-ig { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); color: white; }
-        .btn-wa { background: #25D366; color: white; }
-        .btn-blue { background: #3b82f6; color: white; }
-
-        #chat-window { display: none; opacity: 0; transition: all 0.3s ease; z-index: 1000; }
-        #chat-window.active { display: block; opacity: 1; transform: translateY(-10px); }
-
-        /* Realizacje hover */
-        .project-card { transition: transform 0.25s ease, border-color 0.25s ease; }
-        .project-card:hover { transform: translateY(-4px); border-color: rgba(59,130,246,0.4) !important; }
-
-        /* Counter animacja */
-        @keyframes fadeUp {
-            from { opacity: 0; transform: translateY(24px); }
-            to   { opacity: 1; transform: translateY(0); }
+        *, *::before, *::after { box-sizing: border-box; }
+        html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+        body {
+            margin: 0;
+            background: var(--paper);
+            color: var(--ink);
+            font-family: var(--sans);
+            font-size: 17px;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
         }
-        .fade-up { animation: fadeUp 0.6s ease both; }
+        a { color: inherit; }
+        img { max-width: 100%; display: block; }
+        [hidden] { display: none !important; }
+        ::selection { background: var(--accent); color: var(--paper); }
 
-        /* Linia dekoracyjna */
-        .section-label {
-            font-size: 10px;
-            font-weight: 800;
-            letter-spacing: 0.3em;
+        .wrap { max-width: var(--wrap); margin: 0 auto; padding-inline: var(--gutter); }
+
+        .label {
+            font-family: var(--mono);
+            font-size: 12px;
+            letter-spacing: 0.04em;
             text-transform: uppercase;
-            color: #3b82f6;
-            display: block;
-            margin-bottom: 12px;
+            color: var(--ink-3);
+        }
+
+        /* ---------- header ---------- */
+        .site-header {
+            position: sticky; top: 0; z-index: 50;
+            background: rgba(243, 241, 236, 0.92);
+            backdrop-filter: saturate(140%) blur(8px);
+            -webkit-backdrop-filter: saturate(140%) blur(8px);
+            border-bottom: 1px solid var(--line);
+        }
+        .site-header .wrap {
+            display: flex; align-items: center; justify-content: space-between;
+            height: 64px; gap: 24px;
+        }
+        .brand {
+            font-family: var(--serif);
+            font-size: 22px;
+            font-weight: 500;
+            text-decoration: none;
+            letter-spacing: -0.01em;
+        }
+        .brand span { color: var(--ink-3); }
+        .nav { display: flex; align-items: center; gap: 32px; }
+        .nav a {
+            text-decoration: none; font-size: 15px; color: var(--ink-2);
+            transition: color .15s;
+        }
+        .nav a:hover { color: var(--ink); }
+
+        .btn {
+            display: inline-flex; align-items: center; gap: 10px;
+            font-family: var(--sans); font-size: 15px; font-weight: 500;
+            text-decoration: none; cursor: pointer;
+            padding: 12px 20px;
+            border: 1px solid var(--ink);
+            border-radius: 2px;
+            background: var(--ink); color: var(--paper);
+            transition: background .15s, color .15s;
+        }
+        .btn:hover { background: var(--accent); border-color: var(--accent); }
+        .btn--ghost { background: transparent; color: var(--ink); }
+        .btn--ghost:hover { background: var(--ink); color: var(--paper); border-color: var(--ink); }
+        .btn--sm { padding: 8px 14px; font-size: 14px; }
+
+        /* ---------- hero ---------- */
+        .hero { padding-block: clamp(64px, 11vw, 140px) clamp(56px, 8vw, 96px); }
+        .hero h1 {
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: clamp(42px, 7.2vw, 92px);
+            line-height: 1.02;
+            letter-spacing: -0.025em;
+            margin: 24px 0 0;
+            max-width: 14ch;
+        }
+        .hero h1 em { font-style: italic; color: var(--accent); }
+        .hero-bottom {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) auto;
+            gap: 40px;
+            align-items: end;
+            margin-top: clamp(40px, 6vw, 72px);
+            padding-top: 28px;
+            border-top: 1px solid var(--line);
+        }
+        .hero-lead { max-width: 52ch; margin: 0; font-size: 19px; color: var(--ink-2); }
+        .hero-actions { display: flex; gap: 12px; flex-wrap: wrap; }
+
+        /* ---------- sections ---------- */
+        .section { padding-block: clamp(64px, 9vw, 120px); border-top: 1px solid var(--line); }
+        .section-head {
+            display: grid;
+            grid-template-columns: 200px minmax(0, 1fr);
+            gap: 40px;
+            margin-bottom: clamp(40px, 5vw, 64px);
+        }
+        .section-head h2 {
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: clamp(32px, 4.4vw, 52px);
+            line-height: 1.08;
+            letter-spacing: -0.02em;
+            margin: 0;
+            max-width: 20ch;
+        }
+
+        /* ---------- projects ---------- */
+        .projects { list-style: none; margin: 0; padding: 0; border-top: 1px solid var(--ink); }
+        .project { border-bottom: 1px solid var(--line); }
+        .project a {
+            display: grid;
+            grid-template-columns: 200px minmax(0, 1.1fr) minmax(0, 1fr) 40px;
+            gap: 40px;
+            padding: 36px 0;
+            text-decoration: none;
+            transition: background .2s;
+        }
+        .project a:hover { background: var(--paper-2); }
+        .project a:hover .project-arrow { transform: translate(3px, -3px); color: var(--accent); }
+        .project-meta { display: flex; flex-direction: column; gap: 6px; }
+        .project h3 {
+            font-family: var(--serif);
+            font-weight: 400;
+            font-size: clamp(28px, 3.2vw, 38px);
+            line-height: 1.1;
+            letter-spacing: -0.015em;
+            margin: 0 0 8px;
+        }
+        .project-url { font-family: var(--mono); font-size: 13px; color: var(--ink-3); }
+        .project p { margin: 0 0 16px; color: var(--ink-2); font-size: 16px; }
+        .tags { display: flex; flex-wrap: wrap; gap: 6px 16px; margin: 0; padding: 0; list-style: none; }
+        .tags li { font-family: var(--mono); font-size: 12px; color: var(--ink-3); }
+        .tags li::before { content: '— '; }
+        .project-arrow {
+            font-size: 22px; line-height: 1; justify-self: end;
+            transition: transform .2s, color .2s;
+        }
+
+        /* ---------- services ---------- */
+        .services {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            border-top: 1px solid var(--ink);
+        }
+        .service {
+            padding: 32px 40px 36px 0;
+            border-bottom: 1px solid var(--line);
+        }
+        .service:nth-child(even) { padding: 32px 0 36px 40px; border-left: 1px solid var(--line); }
+        .service .label { display: block; margin-bottom: 16px; }
+        .service h3 {
+            font-family: var(--serif); font-weight: 500;
+            font-size: 24px; line-height: 1.2; letter-spacing: -0.01em;
+            margin: 0 0 10px;
+        }
+        .service p { margin: 0; color: var(--ink-2); font-size: 16px; max-width: 46ch; }
+
+        /* ---------- about ---------- */
+        .about {
+            display: grid;
+            grid-template-columns: 200px minmax(0, 1.4fr) minmax(0, 1fr);
+            gap: 40px;
+        }
+        .about-text p { margin: 0 0 20px; font-size: 19px; color: var(--ink-2); }
+        .about-text p:first-child {
+            font-family: var(--serif); font-size: clamp(24px, 2.6vw, 30px);
+            line-height: 1.3; color: var(--ink); letter-spacing: -0.01em;
+        }
+        .facts { margin: 0; padding: 0; list-style: none; border-top: 1px solid var(--ink); }
+        .facts li {
+            display: flex; justify-content: space-between; gap: 16px;
+            padding: 14px 0; border-bottom: 1px solid var(--line);
+            font-size: 15px;
+        }
+        .facts li span:first-child { color: var(--ink-3); }
+        .facts a { text-decoration: none; border-bottom: 1px solid var(--line); }
+        .facts a:hover { border-color: var(--ink); }
+
+        /* ---------- faq ---------- */
+        .faq { border-top: 1px solid var(--ink); max-width: 880px; margin-left: calc(200px + 40px); }
+        .faq details { border-bottom: 1px solid var(--line); }
+        .faq summary {
+            display: flex; justify-content: space-between; align-items: center; gap: 24px;
+            padding: 24px 0; cursor: pointer; list-style: none;
+        }
+        .faq summary::-webkit-details-marker { display: none; }
+        .faq summary::after {
+            content: '+'; font-family: var(--mono); font-size: 20px; color: var(--ink-3);
+            transition: transform .2s;
+        }
+        .faq details[open] summary::after { transform: rotate(45deg); }
+        .faq h3 {
+            font-family: var(--serif); font-weight: 400;
+            font-size: clamp(20px, 2.2vw, 26px); line-height: 1.25; letter-spacing: -0.01em; margin: 0;
+        }
+        .faq details p { margin: 0 0 28px; color: var(--ink-2); max-width: 64ch; }
+
+        /* ---------- contact ---------- */
+        .contact { background: var(--ink); color: var(--paper); border-top: 0; }
+        .contact .label { color: #9a978f; }
+        .contact-grid {
+            display: grid;
+            grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+            gap: clamp(40px, 6vw, 96px);
+        }
+        .contact h2 {
+            font-family: var(--serif); font-weight: 400;
+            font-size: clamp(36px, 5vw, 64px); line-height: 1.04;
+            letter-spacing: -0.025em; margin: 20px 0 24px;
+        }
+        .contact-lead { color: #bdbab2; max-width: 40ch; margin: 0 0 40px; }
+        .phone {
+            font-family: var(--serif); font-size: clamp(30px, 3.6vw, 42px);
+            text-decoration: none; letter-spacing: -0.01em;
+            display: inline-block; border-bottom: 1px solid #4a4945;
+            transition: border-color .15s;
+        }
+        .phone:hover { border-color: var(--paper); }
+        .channels { display: flex; gap: 28px; margin-top: 28px; flex-wrap: wrap; }
+        .channels a {
+            font-size: 15px; text-decoration: none; color: #bdbab2;
+            border-bottom: 1px solid #4a4945; padding-bottom: 2px;
+        }
+        .channels a:hover { color: var(--paper); border-color: var(--paper); }
+
+        .form { display: flex; flex-direction: column; gap: 28px; }
+        .field label { display: block; margin-bottom: 8px; }
+        .field input, .field textarea {
+            width: 100%;
+            font: inherit; font-size: 17px; color: var(--paper);
+            background: transparent;
+            border: 0; border-bottom: 1px solid #4a4945;
+            border-radius: 0;
+            padding: 8px 0 12px;
+            outline: none;
+            transition: border-color .15s;
+        }
+        .field textarea { resize: vertical; min-height: 120px; }
+        .field input::placeholder, .field textarea::placeholder { color: #6d6b65; }
+        .field input:focus, .field textarea:focus { border-color: var(--paper); }
+        .form .btn { align-self: flex-start; background: var(--paper); color: var(--ink); border-color: var(--paper); }
+        .form .btn:hover { background: #d9e4dd; border-color: #d9e4dd; }
+        .form .btn:disabled { opacity: .6; cursor: default; }
+        .form-status { font-size: 15px; color: #bdbab2; margin: 0; min-height: 1.6em; }
+        .form-status.is-error { color: #f0a58f; }
+        .form-done h3 { font-family: var(--serif); font-weight: 400; font-size: 32px; margin: 0 0 12px; }
+        .form-done p { color: #bdbab2; margin: 0; }
+
+        /* ---------- footer ---------- */
+        .site-footer { background: var(--ink); color: #85837c; border-top: 1px solid #2c2c2a; }
+        .site-footer .wrap {
+            display: flex; justify-content: space-between; gap: 16px; flex-wrap: wrap;
+            padding-block: 28px; font-size: 14px;
+        }
+        .site-footer a { text-decoration: none; }
+        .site-footer a:hover { color: var(--paper); }
+
+        :focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+        .contact :focus-visible { outline-color: var(--paper); }
+
+        /* ---------- responsive ---------- */
+        @media (max-width: 900px) {
+            .section-head, .about { grid-template-columns: minmax(0, 1fr); gap: 16px; }
+            .about { gap: 32px; }
+            .project a { grid-template-columns: minmax(0, 1fr) 32px; gap: 16px 24px; padding: 28px 0; }
+            .project-meta { grid-column: 1 / -1; flex-direction: row; justify-content: space-between; }
+            .project-body { grid-column: 1; }
+            .project-desc { grid-column: 1; }
+            .project-arrow { grid-column: 2; grid-row: 2; align-self: start; }
+            .contact-grid { grid-template-columns: minmax(0, 1fr); }
+            .faq { margin-left: 0; }
+        }
+        @media (max-width: 720px) {
+            .nav a:not(.btn) { display: none; }
+            .hero-bottom { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+            .services { grid-template-columns: minmax(0, 1fr); }
+            .service, .service:nth-child(even) { padding: 28px 0; border-left: 0; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            html { scroll-behavior: auto; }
+            * { transition: none !important; }
         }
     </style>
 </head>
-<body class="antialiased">
+<body id="top">
 
-    <!-- NAV -->
-    <nav class="fixed top-0 w-full z-50 p-4 md:p-6">
-        <div class="max-w-6xl mx-auto flex justify-between items-center glass rounded-2xl px-4 md:px-6 py-3">
-            <div class="text-lg md:text-xl font-extrabold tracking-tighter italic">WebCodeSite<span class="text-blue-500">.studio</span></div>
-            <div class="flex items-center gap-2 md:gap-4">
-                <a href="https://www.instagram.com/webcodesite.studio/" target="_blank" class="btn-ig px-3 md:px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-wider">Instagram</a>
-                <a href="https://wa.me/message/PEZUXVZR5CTRK1" target="_blank" class="btn-wa px-3 md:px-5 py-2 rounded-xl text-[10px] font-bold uppercase tracking-wider text-black">WhatsApp</a>
-            </div>
+    <header class="site-header">
+        <div class="wrap">
+            <a href="/" class="brand" aria-label="WebCodeSite.studio — strona główna">WebCodeSite<span>.studio</span></a>
+            <nav class="nav" aria-label="Główna nawigacja">
+                <a href="#realizacje">Realizacje</a>
+                <a href="#oferta">Oferta</a>
+                <a href="#o-mnie">O mnie</a>
+                <a href="#faq">FAQ</a>
+                <a href="#kontakt" class="btn btn--sm">Kontakt</a>
+            </nav>
         </div>
-    </nav>
+    </header>
 
-    <!-- HERO -->
-    <section class="relative min-h-screen flex flex-col items-center justify-center text-center px-6">
-        <div class="absolute inset-0 -z-10 overflow-hidden text-blue-500/10">
-            <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-current blur-[120px] rounded-full"></div>
-        </div>
-        <h1 class="text-5xl md:text-8xl font-extrabold mb-6 tracking-tight leading-none uppercase italic">
-            Twój biznes<br><span class="accent-gradient">w sieci</span>
-        </h1>
-        <p class="max-w-xl text-gray-400 text-lg md:text-xl mb-12 font-light">
-            Projektujemy nowoczesne strony WWW, które przyciągają klientów. Profesjonalnie, szybko i z gwarancją jakości.
-        </p>
-        <div class="flex flex-col sm:flex-row gap-5 w-full max-w-lg">
-            <button onclick="toggleChat()" class="btn-blue flex-1 py-4 rounded-2xl font-bold text-lg hover:scale-105 transition">Zacznij projekt</button>
-            <a href="https://www.instagram.com/webcodesite.studio/" target="_blank" class="btn-ig flex-1 py-4 rounded-2xl font-bold text-lg flex items-center justify-center hover:scale-105 transition text-white">Portfolio IG</a>
-        </div>
-    </section>
-
-    <!-- O MNIE -->
-    <section class="max-w-6xl mx-auto px-6 py-20 mb-8">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-
-            <!-- Tekst -->
-            <div>
-                <span class="section-label">Kim jestem</span>
-                <h2 class="text-4xl font-extrabold mb-6 italic leading-tight">
-                    Mateusz,<br><span class="accent-gradient">twórca stron WWW</span>
-                </h2>
-                <p class="text-gray-400 leading-relaxed text-lg font-light mb-6">
-                    Mam 17 lat i każdy projekt traktuję poważnie – niezależnie od jego wielkości. Tworzę strony od podstaw: od struktury i designu, przez formularze kontaktowe, galerie i mapy, aż po podstawowe SEO. Szybko się uczę i sprawnie wdrażam niestandardowe rozwiązania.
-                </p>
-                <p class="text-gray-500 leading-relaxed font-light mb-8">
-                    Dostarczam też pełny kod źródłowy i repozytorium na GitHubie – Twój projekt zostaje Twój.
-                </p>
-
-                <!-- Stack / cechy -->
-                <div class="flex flex-wrap gap-3">
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">WordPress</span>
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">HTML / CSS / JS</span>
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">SEO</span>
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">GitHub</span>
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">Formularze</span>
-                    <span class="glass px-4 py-2 rounded-xl text-xs font-bold uppercase tracking-wider text-gray-300">Mapy</span>
-                </div>
-            </div>
-
-            <!-- Statystyki / karty -->
-            <div class="grid grid-cols-2 gap-4">
-                <div class="glass rounded-3xl p-8 text-center border-blue-500/10">
-                    <div class="text-5xl font-black accent-gradient mb-2">2</div>
-                    <div class="text-gray-400 text-sm font-light uppercase tracking-wider">Zrealizowane<br>projekty</div>
-                </div>
-                <div class="glass rounded-3xl p-8 text-center border-blue-500/10">
-                    <div class="text-5xl font-black accent-gradient mb-2">5–10</div>
-                    <div class="text-gray-400 text-sm font-light uppercase tracking-wider">Podstron<br>w projekcie</div>
-                </div>
-                <div class="glass rounded-3xl p-8 text-center border-blue-500/10 col-span-2">
-                    <div class="text-gray-400 text-sm font-light uppercase tracking-widest mb-3">Kod na GitHubie</div>
-                    <div class="flex justify-center gap-4">
-                        <a href="https://github.com/mat-jan" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-bold uppercase tracking-wider transition">github.com/mat-jan</a>
-                        <span class="text-gray-700">·</span>
-                        <a href="https://github.com/webcodesite-studio" target="_blank" class="text-blue-400 hover:text-blue-300 text-xs font-bold uppercase tracking-wider transition">webcodesite-studio</a>
+    <main>
+        <section class="hero">
+            <div class="wrap">
+                <span class="label">Projektowanie i tworzenie stron WWW</span>
+                <h1>Strony internetowe, które <em>pracują</em> na Twoją firmę.</h1>
+                <div class="hero-bottom">
+                    <p class="hero-lead">
+                        Projektuję i koduję strony od podstaw: od struktury i wyglądu, przez formularze, galerie i mapy, po podstawowe SEO. Na koniec dostajesz pełny kod źródłowy.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#kontakt" class="btn">Wyceń projekt <span aria-hidden="true">→</span></a>
+                        <a href="#realizacje" class="btn btn--ghost">Realizacje</a>
                     </div>
                 </div>
             </div>
+        </section>
 
-        </div>
-    </section>
+        <section class="section" id="realizacje">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">01 — Realizacje</span>
+                    <h2>Wybrane projekty</h2>
+                </div>
 
-    <!-- REALIZACJE -->
-    <section class="max-w-6xl mx-auto px-6 py-12 mb-20">
-        <span class="section-label">Portfolio</span>
-        <h2 class="text-4xl font-extrabold italic mb-12">Zrealizowane projekty</h2>
+                <ul class="projects">
+                    <li class="project">
+                        <a href="https://ozodancestudio.pl/" target="_blank" rel="noopener">
+                            <div class="project-meta">
+                                <span class="label">Studio tańca</span>
+                                <span class="label">WordPress</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>Ozo Dance Studio</h3>
+                                <span class="project-url">ozodancestudio.pl</span>
+                            </div>
+                            <div class="project-desc">
+                                <p>Rozbudowana strona dla sieci studiów tańca działającej w 7 miastach. Osobne podstrony dla każdej lokalizacji, grafik zajęć, cennik, profile instruktorów i formularz kontaktowy.</p>
+                                <ul class="tags">
+                                    <li>7 lokalizacji</li>
+                                    <li>SEO</li>
+                                    <li>Galeria</li>
+                                    <li>Social media</li>
+                                </ul>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                    <li class="project">
+                        <a href="https://askom.waw.pl/" target="_blank" rel="noopener">
+                            <div class="project-meta">
+                                <span class="label">Usługi IT</span>
+                                <span class="label">HTML / CSS / JS</span>
+                            </div>
+                            <div class="project-body">
+                                <h3>ASKOM</h3>
+                                <span class="project-url">askom.waw.pl</span>
+                            </div>
+                            <div class="project-desc">
+                                <p>Strona firmy świadczącej usługi IT w Warszawie i okolicach. Czytelna prezentacja oferty (certyfikowany serwis InsERT, cyberbezpieczeństwo, Microsoft 365) i struktura prowadząca do kontaktu.</p>
+                                <ul class="tags">
+                                    <li>SEO</li>
+                                    <li>Responsywność</li>
+                                </ul>
+                            </div>
+                            <span class="project-arrow" aria-hidden="true">↗</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
 
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+        <section class="section" id="oferta">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">02 — Oferta</span>
+                    <h2>Co dostajesz w ramach projektu</h2>
+                </div>
 
-            <!-- Ozo Dance Studio -->
-            <a href="https://ozodancestudio.pl/" target="_blank" class="project-card glass rounded-[2rem] p-8 border border-white/5 block group">
-                <div class="flex items-start justify-between mb-6">
-                    <div>
-                        <span class="text-[10px] font-black uppercase tracking-[0.25em] text-blue-400">Studio tańca</span>
-                        <h3 class="text-2xl font-extrabold italic mt-1">Ozo Dance Studio</h3>
+                <div class="services">
+                    <div class="service">
+                        <span class="label">A</span>
+                        <h3>Indywidualny projekt</h3>
+                        <p>Układ i wygląd przygotowane pod Twoją firmę i klientów, bez gotowych szablonów. Zwykle od 5 do 10 podstron.</p>
                     </div>
-                    <div class="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center text-blue-400 group-hover:bg-blue-500/20 transition text-lg">→</div>
-                </div>
-                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
-                    Rozbudowana strona dla sieci studiów tańca działającej w 7 miastach. Pełna nawigacja z podstronami dla każdej lokalizacji, grafik zajęć, cennik, profile instruktorów i formularz kontaktowy.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">WordPress</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">7 lokalizacji</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">SEO</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Galeria</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Social Media</span>
-                </div>
-                <div class="mt-6 pt-6 border-t border-white/5">
-                    <span class="text-blue-400 text-xs font-bold uppercase tracking-widest">ozodancestudio.pl ↗</span>
-                </div>
-            </a>
-
-            <!-- ASKOM -->
-            <a href="https://askom.waw.pl/" target="_blank" class="project-card glass rounded-[2rem] p-8 border border-white/5 block group">
-                <div class="flex items-start justify-between mb-6">
-                    <div>
-                        <span class="text-[10px] font-black uppercase tracking-[0.25em] text-teal-400">Firma IT / Usługi</span>
-                        <h3 class="text-2xl font-extrabold italic mt-1">ASKOM</h3>
+                    <div class="service">
+                        <span class="label">B</span>
+                        <h3>Wersja mobilna i szybkość</h3>
+                        <p>Strona działa poprawnie na telefonach, tabletach i komputerach, a jej kod jest zoptymalizowany pod szybkie ładowanie.</p>
                     </div>
-                    <div class="w-10 h-10 rounded-full bg-teal-500/10 flex items-center justify-center text-teal-400 group-hover:bg-teal-500/20 transition text-lg">→</div>
-                </div>
-                <p class="text-gray-400 font-light text-sm leading-relaxed mb-6">
-                    Profesjonalna strona dla firmy świadczącej usługi IT w Warszawie i okolicach. Prezentacja oferty (certyfikowany serwis InsERT, cyberbezpieczeństwo, Microsoft 365), sekcja kontaktowa i przejrzysta struktura nastawiona na konwersję.
-                </p>
-                <div class="flex flex-wrap gap-2">
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">HTML/CSS/JS</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">SEO</span>
-                    <span class="bg-white/5 px-3 py-1 rounded-lg text-[10px] font-bold uppercase tracking-wider text-gray-400">Responsywność</span>
-                </div>
-                <div class="mt-6 pt-6 border-t border-white/5">
-                    <span class="text-teal-400 text-xs font-bold uppercase tracking-widest">askom.waw.pl ↗</span>
-                </div>
-            </a>
-
-        </div>
-
-        <!-- CTA pod realizacjami -->
-        <div class="mt-8 text-center">
-            <p class="text-gray-600 text-sm font-light">Twój projekt mógłby być tutaj.</p>
-            <button onclick="toggleChat()" class="mt-4 btn-blue px-8 py-3 rounded-2xl font-bold text-sm hover:scale-105 transition inline-block">Porozmawiajmy →</button>
-        </div>
-    </section>
-
-    <!-- OFERTA -->
-    <section id="oferta" class="max-w-6xl mx-auto px-6 py-20 bg-white/[0.02] rounded-[3rem] mb-20 border border-white/5">
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-            <div>
-                <span class="section-label">Co dostarczam</span>
-                <h2 class="text-4xl font-bold mb-6 italic">Baza Strony WWW</h2>
-                <p class="text-gray-400 mb-8 leading-relaxed text-lg font-light">Tworzymy fundamenty Twojej obecności w sieci. Każdy projekt jest optymalizowany pod kątem szybkości i urządzeń mobilnych.</p>
-                <div class="space-y-4">
-                    <div class="flex items-center gap-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
-                        <span class="text-gray-300 font-medium">Indywidualny design</span>
+                    <div class="service">
+                        <span class="label">C</span>
+                        <h3>Podstawowe SEO</h3>
+                        <p>Poprawna struktura nagłówków, opisy stron i meta dane, dzięki którym strona jest lepiej rozumiana przez Google.</p>
                     </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
-                        <span class="text-gray-300 font-medium">Optymalizacja SEO</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
-                        <span class="text-gray-300 font-medium">Integracja z social media</span>
-                    </div>
-                    <div class="flex items-center gap-3">
-                        <div class="w-6 h-6 rounded-full bg-blue-500/20 flex items-center justify-center text-blue-400 text-[10px]">✓</div>
-                        <span class="text-gray-300 font-medium">Kod źródłowy + repozytorium GitHub</span>
+                    <div class="service">
+                        <span class="label">D</span>
+                        <h3>Kod źródłowy na własność</h3>
+                        <p>Po zakończeniu przekazuję pełny kod i repozytorium GitHub. Strona należy do Ciebie, bez uzależnienia od wykonawcy.</p>
                     </div>
                 </div>
             </div>
-            <div class="glass p-8 md:p-12 rounded-[2.5rem] border-blue-500/20 text-center">
-                <h3 class="text-xl font-bold mb-4 uppercase tracking-tighter">Potrzebujesz wyceny?</h3>
-                <p class="text-gray-400 mb-8 font-light">Napisz bezpośrednio. Jesteśmy dostępni dla Ciebie.</p>
-                <div class="space-y-4">
-                    <a href="tel:513773353" class="text-3xl md:text-4xl font-black text-white block tracking-tighter hover:text-blue-400 transition">513 773 353</a>
-                    <a href="https://wa.me/message/PEZUXVZR5CTRK1" target="_blank" class="btn-wa w-full py-4 rounded-2xl font-bold uppercase text-[10px] tracking-[0.2em] text-black flex items-center justify-center gap-2">WhatsApp Direct</a>
+        </section>
+
+        <section class="section" id="o-mnie">
+            <div class="wrap about">
+                <span class="label">03 — O mnie</span>
+                <div class="about-text">
+                    <p>Nazywam się Mateusz i prowadzę WebCodeSite. Każdy projekt traktuję poważnie, niezależnie od jego wielkości.</p>
+                    <p>Pracuję w WordPressie lub piszę strony w czystym HTML, CSS i JavaScript, zależnie od tego, czego potrzebuje projekt. Szybko wdrażam niestandardowe rozwiązania i pozostaję w bezpośrednim kontakcie przez cały czas trwania prac.</p>
+                </div>
+                <ul class="facts">
+                    <li><span>Technologie</span><span>WordPress, HTML/CSS/JS</span></li>
+                    <li><span>Zakres</span><span>Projekt, wdrożenie, SEO</span></li>
+                    <li><span>GitHub</span><a href="https://github.com/mat-jan" target="_blank" rel="noopener">mat-jan</a></li>
+                    <li><span>Studio</span><a href="https://github.com/webcodesite-studio" target="_blank" rel="noopener">webcodesite-studio</a></li>
+                    <li><span>Instagram</span><a href="https://www.instagram.com/webcodesite.studio/" target="_blank" rel="noopener">@webcodesite.studio</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="faq">
+            <div class="wrap">
+                <div class="section-head">
+                    <span class="label">04 — Pytania</span>
+                    <h2>Najczęstsze pytania o stronę internetową</h2>
+                </div>
+                <div class="faq">
+                    <details>
+                        <summary><h3>Ile kosztuje strona internetowa?</h3></summary>
+                        <p>Cena zależy od liczby podstron, funkcji (formularze, galerie, mapy, grafik zajęć) i technologii. Opisz krótko swój projekt w formularzu albo zadzwoń, a przygotuję bezpłatną wycenę.</p>
+                    </details>
+                    <details>
+                        <summary><h3>WordPress czy strona w HTML — co wybrać?</h3></summary>
+                        <p>WordPress sprawdzi się, jeśli chcesz samodzielnie dodawać treści, np. aktualności czy grafik. Strona w czystym HTML, CSS i JavaScript jest lżejsza i szybsza, dobra dla wizytówek firmowych, które rzadko się zmieniają. Doradzę, co lepiej pasuje do Twojej firmy.</p>
+                    </details>
+                    <details>
+                        <summary><h3>Czy strona będzie dobrze działać na telefonie?</h3></summary>
+                        <p>Tak. Każdą stronę projektuję jako responsywną, czyli dopasowaną do telefonów, tabletów i komputerów.</p>
+                    </details>
+                    <details>
+                        <summary><h3>Czy strona będzie widoczna w Google?</h3></summary>
+                        <p>W ramach projektu wykonuję podstawowe SEO: poprawną strukturę nagłówków, tytuły i opisy podstron, dane strukturalne oraz szybkie ładowanie. To fundament, dzięki któremu Google prawidłowo rozumie i indeksuje stronę.</p>
+                    </details>
+                    <details>
+                        <summary><h3>Czy dostanę kod źródłowy strony?</h3></summary>
+                        <p>Tak. Po zakończeniu prac przekazuję pełny kod źródłowy i repozytorium na GitHubie. Strona należy do Ciebie i nie jesteś uzależniony od wykonawcy.</p>
+                    </details>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <footer class="py-12 border-t border-white/5 text-center">
-        <p class="text-gray-600 text-[10px] uppercase tracking-[0.5em] font-black italic">&copy; 2025 WebCodeSite.studio</p>
+        <section class="section contact" id="kontakt">
+            <div class="wrap contact-grid">
+                <div>
+                    <span class="label">05 — Kontakt</span>
+                    <h2>Porozmawiajmy o Twojej stronie.</h2>
+                    <p class="contact-lead">Opisz krótko, czym zajmuje się Twoja firma i czego potrzebujesz. Odezwę się z pytaniami i wyceną.</p>
+                    <a href="tel:+48513773353" class="phone">513 773 353</a>
+                    <div class="channels">
+                        <a href="https://wa.me/message/PEZUXVZR5CTRK1" target="_blank" rel="noopener">WhatsApp</a>
+                        <a href="https://www.instagram.com/webcodesite.studio/" target="_blank" rel="noopener">Instagram</a>
+                    </div>
+                </div>
+
+                <div>
+                    <form id="contact-form" class="form" action="https://formspree.io/f/xrebzbwl" method="POST">
+                        <div class="field">
+                            <label for="f-name" class="label">Imię lub nazwa firmy</label>
+                            <input id="f-name" type="text" name="name" autocomplete="name">
+                        </div>
+                        <div class="field">
+                            <label for="f-contact" class="label">Telefon lub e-mail *</label>
+                            <input id="f-contact" type="text" name="contact" required autocomplete="email">
+                        </div>
+                        <div class="field">
+                            <label for="f-message" class="label">Wiadomość *</label>
+                            <textarea id="f-message" name="message" required placeholder="Np. potrzebuję strony dla gabinetu, ok. 5 podstron, z formularzem i mapą dojazdu."></textarea>
+                        </div>
+                        <button type="submit" class="btn" id="submit-btn">Wyślij wiadomość <span aria-hidden="true">→</span></button>
+                        <p class="form-status" id="form-status" role="status" aria-live="polite"></p>
+                    </form>
+                    <div class="form-done" id="form-done" hidden>
+                        <h3>Dziękuję za wiadomość.</h3>
+                        <p>Odezwę się najszybciej, jak to możliwe.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>&copy; <span id="year">2025</span> WebCodeSite.studio</span>
+            <a href="#top">Do góry ↑</a>
+        </div>
     </footer>
 
-    <!-- CHAT -->
-    <div class="fixed bottom-6 right-6 z-[100] flex flex-col items-end">
-        <div id="chat-window" class="glass w-[320px] md:w-[380px] rounded-[2rem] overflow-hidden mb-4 shadow-2xl border border-white/10 bg-[#080808]">
-            <div class="bg-blue-600 p-6 flex items-center gap-4">
-                <div class="w-10 h-10 bg-white/10 rounded-full flex items-center justify-center">🌐</div>
-                <div class="text-left">
-                    <h4 class="font-bold text-white text-sm italic">WebCodeSite Studio</h4>
-                    <p class="text-[9px] text-blue-200 font-bold uppercase tracking-widest">Operator Online</p>
-                </div>
-                <button onclick="toggleChat()" class="ml-auto text-white/50 hover:text-white font-bold text-xl">✕</button>
-            </div>
-            <form id="chat-form" action="https://formspree.io/f/xrebzbwl" method="POST" class="p-8 space-y-4 text-left">
-                <input type="text" name="contact" placeholder="Nr telefonu lub e-mail" required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm outline-none focus:border-blue-500 transition text-white">
-                <textarea name="message" placeholder="Twoja wiadomość..." required class="w-full bg-white/5 border border-white/10 rounded-xl p-4 text-sm outline-none focus:border-blue-500 transition h-28 resize-none text-white"></textarea>
-                <button type="submit" id="submit-btn" class="w-full btn-blue py-4 rounded-xl font-bold text-xs uppercase tracking-widest transition shadow-lg shadow-blue-500/20">Wyślij do Studio</button>
-            </form>
-            <div id="thanks" class="hidden p-16 text-center bg-[#080808]">
-                <div class="text-5xl mb-4">🚀</div>
-                <h4 class="font-bold italic uppercase">Odebrano!</h4>
-                <p class="text-[10px] text-gray-500 mt-4 tracking-widest uppercase font-black">Zaraz się odezwiemy.</p>
-            </div>
-        </div>
-        <button onclick="toggleChat()" class="w-16 h-16 bg-blue-600 rounded-full flex items-center justify-center shadow-2xl hover:scale-110 transition-all border-4 border-white/5">
-            <svg class="w-7 h-7 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 10h.01M12 10h.01M16 10h.01M9 16H5a2 2 0 01-2-2V6a2 2 0 012-2h14a2 2 0 012 2v8a2 2 0 01-2 2h-5l-5 5v-5z"></path></svg>
-        </button>
-    </div>
-
     <script>
-        document.addEventListener('contextmenu', event => event.preventDefault());
-        document.onkeydown = function(e) {
-            if (e.keyCode == 123) return false;
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) return false;
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) return false;
-            if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) return false;
-            if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) return false;
-        };
+        document.getElementById('year').textContent = new Date().getFullYear();
 
-        function toggleChat() { document.getElementById('chat-window').classList.toggle('active'); }
+        const form = document.getElementById('contact-form');
+        const btn = document.getElementById('submit-btn');
+        const status = document.getElementById('form-status');
 
-        const form = document.getElementById('chat-form');
-        form.onsubmit = async (e) => {
+        form.addEventListener('submit', async (e) => {
             e.preventDefault();
-            const btn = document.getElementById('submit-btn');
-            btn.innerHTML = "WYSYŁANIE...";
             btn.disabled = true;
-            const response = await fetch(form.action, {
-                method: 'POST',
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            });
-            if (response.ok) {
-                form.classList.add('hidden');
-                document.getElementById('thanks').classList.remove('hidden');
-                setTimeout(() => { toggleChat(); }, 5000);
-            } else {
-                alert("Błąd. Zadzwon: 513 773 353");
+            status.classList.remove('is-error');
+            status.textContent = 'Wysyłanie…';
+            try {
+                const res = await fetch(form.action, {
+                    method: 'POST',
+                    body: new FormData(form),
+                    headers: { 'Accept': 'application/json' }
+                });
+                if (!res.ok) throw new Error();
+                form.hidden = true;
+                document.getElementById('form-done').hidden = false;
+            } catch {
+                status.classList.add('is-error');
+                status.textContent = 'Nie udało się wysłać wiadomości. Zadzwoń: 513 773 353.';
                 btn.disabled = false;
-                btn.innerHTML = "WYŚLIJ PONOWNIE";
             }
-        };
+        });
     </script>
 </body>
 </html>
